@@ -1,0 +1,33 @@
+.fontsize {
+ font-size: 30px;
+}
+.color {
+  color: red;
+}
+.align {
+  text-align: center;
+}
+.decor {
+  text-decoration: underline;
+}
+.font {
+  font-family: 'Times New Roman', Times, serif;
+}
+.fontw {
+  font-weight: bold;
+}
+.shadow {
+  text-shadow: 0px 0px 0px red;
+}
+.upper {
+  text-transform: uppercase;
+}
+.ident {
+  text-indent: 100px;
+}
+.wspace {
+  word-spacing: 20px;
+}
+.example {
+  border: 1px solid red;
+}

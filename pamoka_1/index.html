@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pirmoji Pamoka</title>
+  <link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+  <h1>Forma</h1>
+      <form action="#" method="GET" enctype="multipart/form-data">
+        <div class="username">
+          <p>Username</p>
+          <input type="text" tabindex="1" name="username">
+        </div>
+        <div class="pass">
+          <p>Password</p>
+          <input type="password" name="password">
+        </div>
+        <div class="phone">
+          <p>Phone</p>
+          <input type="number" tabindex="2" name="phone">
+        </div> 
+       <div class="gender">
+          <p>Gender</p>
+          <div>
+            <input type="radio" tabindex="3" name="gender" value="male"> Male
+          </div>
+          <div>
+            <input type="radio" tabindex="3" name="gender" value="female"> Female
+          </div>
+          <div>
+            <input type="radio" tabindex="3" checked name="gender" value="other"> Other
+          </div>
+        </div>
+        <div class="check">
+          <p>Transport</p>
+          <div>
+            <input type="checkbox" tabindex="4" name="" value="bike">Bike
+          </div>
+          <div>
+            <input checked type="checkbox" tabindex="4" name="" value="Car">Car
+          </div>
+          <div>
+            <input type="checkbox" tabindex="4" value="bus">Bus
+          </div>
+        </div>
+        <div class="txtBox">
+          <p>Comment</p>
+          <textarea name="comment" tabindex="5" cols="30" rows="3"></textarea>
+        </div>
+        <div class="addPhoto">
+          <p>Add Photo</p>
+          <input type="file" name="file" tabindex="6">
+        </div>
+        <div class="select">
+          <p>Select your favorite color</p>
+          <select name="select">
+            <option value="color" tabindex="7">Yellow</option>
+            <option value="color" tabindex="7">Black</option>
+            <option value="color" tabindex="7">Green</option>
+          </select>
+        </div>
+        <div class="action">
+          <p>Action</p>
+          <input type="submit" name="add" value="Submit">
+          <input type="reset" name="cancel" value="Cancel">
+        </div>
+      </form>
+</body>
+</html>
