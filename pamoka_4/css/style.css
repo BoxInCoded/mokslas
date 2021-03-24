@@ -1,36 +1,39 @@
 .box {
   display: inline-block;
   width: 500px;
-  height: 600px;
+  max-height: 200px;
   border: 1px solid #000;
+  margin-top: 20px;
   margin-left: calc(50% - 250px);
+  position: relative;
 }
 
-.box .row {
-  width: 100%;
-  height: 200px;
-  background-color: bisque;
-  transition: 4s;
+.box p::after {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  content: '"" ';
+  width: 30px;
+  height: 30px;
+  background-color: cadetblue;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
-.img li {
-  padding-left: 15px;
-  height: 25px;
-  background: url(../img/pexelsphoto952237.png);
-  background-repeat: no-repeat;
-  background-size: 14px 14px;
-  font-size: 22px;
-  background-position: 0px 4px;
+p {
+  position: relative;
 }
 
-.add {
-  opacity: 0;
-  width: 100%;
-  height: 200px;
-}
-
-.box .row:hover {
-  display: inline-block;
-  opacity: 1;
-  transition: 4s;
+.box p::after {
+  position: relative;
+  bottom: 0;
+  left: 20px;
+  content: '"" ';
+  width: 30px;
+  height: 30px;
+  background-color: cadetblue;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
 }
