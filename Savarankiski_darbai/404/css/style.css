@@ -7,19 +7,21 @@ body {
   display: inline-block;
   background-color: #fff;
   border-radius: 25px;
-  width: 90%;
+  width: 89%;
   height: 50vh;
   margin: 0px 100px 0px 100px;
   box-shadow: 2px 2px 4px 4px #c3c6cd;
   margin-top: calc(45% - 65vh);
+  text-align: center;
 }
 
 .box .column_left {
-  display: block;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
   width: 35%;
   float: left;
-  margin-left: 50px;
-  margin-top: 10%;
+  margin-top: calc(17.5% - 100px);
 }
 
 h1 {
@@ -43,19 +45,22 @@ button.btn {
   background-color: #121c3f;
   text-transform: uppercase;
   margin-top: 20px;
-  margin-left: 25px;
 }
 
-.column_right {
-  display: block;
+.column_right { 
+  display: inline-block;
   width: 65%;
-  float: right;
+  height: 100%;
+  position: relative;
 }
 
 img {
-  
-  height: auto;
-  max-height: 90%;
-  width: auto;
-  max-width: 90%;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
 }
