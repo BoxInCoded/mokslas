@@ -1,0 +1,14 @@
+@import 'reset';
+
+body {
+  background-color: green;
+  .wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+        .block {
+        width: 500px;
+        height: 200px;
+    }
+  }
+}
