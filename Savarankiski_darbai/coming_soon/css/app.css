@@ -394,24 +394,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
 }
 
-.about .skills .skills__progress1 {
-  width: 90%;
-  height: 20px;
-  background-color: blue;
-}
-
-.about .skills .skills__progress2 {
-  width: 86%;
-  height: 20px;
-  background-color: blue;
-}
-
-.about .skills .skills__progress3 {
-  width: 78%;
-  height: 20px;
-  background-color: blue;
-}
-
 .footer {
   height: 50vh;
   background-color: blue;
