@@ -8,7 +8,7 @@
     <title>Coming Soon</title>
   </head>
   <body>
-    <div class="wrapper" id="top">
+    <div class="wrapper">
       <header class="header">
         <div class="logo-row">
           <img class="logo" src="./img/logo.png" alt="LOGO" />
@@ -36,7 +36,7 @@
             />
           </form>
           <div class="btn">
-          <button type="submit" form="form">Subscribe Now</button>            
+            <button type="submit" form="form">Subscribe Now</button>
           </div>
         </div>
         <span class="mouse">
@@ -125,8 +125,10 @@
           </div>
         </div>
       </section>
-      <div class="bacToTop" id="top">Top</div>
       <footer class="footer">
+        <button onclick="topFunction()" id="backToTop">
+          <i class="far fa-caret-square-up"></i>
+        </button>
         <div class="social">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -136,35 +138,29 @@
           <a href="#"><i class="fas fa-rss"></i></a>
         </div>
         <hr />
-        <div class="footerLogo"></div>
-        <div class="copyright">
-          <span>copyright</span>
+        <div class="footerLogo">
+          <img class="logo" src="./img/logo.png" alt="LOGO" />
         </div>
-        <div class="footerMenu">
-          <nav class="nav">
-            <ul>
-              <li>Navigation</li>
-              <li>Navigation</li>
-              <li>Navigation</li>
-              <li>Navigation</li>
-              <li>Navigation</li>
-            </ul>
-          </nav>
+        <div class="copyright">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <a href="#">Matrox</a>
+            <span>|</span>
+                <span>All Rights Reserved</span>
+                <span>|</span>
+                <span>
+                  Developed by 
+                  <a href="#">Matas</a>
+                </span>
+                <p>Matrox pack includes complete websites not just homepages. It comes with full website demos. Over 200* ready html files only for 17$. Purchase Matrox Now!</p>
+          </p>
         </div>
       </footer>
     </div>
-    <script>
-      const progressBar = document.getElementsByClassName("progress-bar")[0];
-      setInterval(() => {
-        const computedStyle = getComputedStyle(progressBar);
-        const width =
-          parseFloat(computedStyle.getPropertyValue("--width")) || 0;
-        progressBar.style.setProperty("--width", width + 0.1);
-      }, 5);
-    </script>
-    <script
-      src="https://kit.fontawesome.com/deb7a1878b.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/deb7a1878b.js"></script>
   </body>
 </html>

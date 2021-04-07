@@ -486,14 +486,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
+  width: 100%;
   height: 50vh;
-  background-color: blue;
+  background-color: #3999a9;
+  color: #fff;
+  text-align: center;
+}
+
+.footer #backToTop {
+  display: none;
+  font-size: 7vmin;
+  background: transparent;
+  color: #ea1e63;
+  position: fixed;
+  bottom: 15px;
+  left: 90vw;
+  z-index: 99;
 }
 
 .footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2.7vmin;
   padding: 3vmin 0;
 }
@@ -503,10 +514,44 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-.footer .social hr {
+.footer hr {
+  display: inline-block;
+  border: none;
+  height: 2px;
+  width: 90%;
+  background: #fff;
+  opacity: 0.3;
+}
+
+.footer .footerLogo {
+  padding: 5vmin 0;
+}
+
+.footer .footerLogo .logo {
+  height: 5vmin;
+  font-size: 6vmin;
+  font-weight: bold;
+}
+
+.footer .copyright {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.7vmin;
+}
+
+.footer .copyright span {
+  color: #d1cccc;
+  margin: 0 0.5vw;
+}
+
+.footer .copyright a {
   color: #fff;
-  width: 100%;
-  height: 3px;
+}
+
+.footer .copyright p {
+  display: inline-block;
+  line-height: 2;
+  margin: .5vmin;
 }
 
 @media only screen and (max-width: 900px) {
