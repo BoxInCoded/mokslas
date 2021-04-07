@@ -69,18 +69,27 @@
           <div class="skills">
             <span class="progress__name">ui design</span>
             <div class="progressColumn">
-              <div class="skills__progress_text">90%</div>
-              <progress max="100" value="90"></progress>
+              <progress max="100" value="90">
+                <div class="progress-bar">
+                  <span class="skills__progress_text1">90%</span>
+                </div>
+              </progress>
             </div>
             <span class="progress__name">web design</span>
             <div class="progressColumn">
-              <div class="skills__progress_text">86%</div>
-              <progress max="100" value="86"></progress>
+              <progress max="100" value="86">
+                <div class="progress-bar">
+                  <span class="skills__progress_text2">86%</span>
+                </div>
+              </progress>
             </div>
             <span class="progress__name">web development</span>
             <div class="progressColumn">
-              <div class="skills__progress_text">78%</div>
-              <progress max="100" value="78"></progress>
+              <progress max="100" value="78">
+                <div class="progress-bar">
+                  <span class="skills__progress_text3">78%</span>
+                </div>
+              </progress>
             </div>
           </div>
         </div>
@@ -100,9 +109,17 @@
                 name="email"
                 placeholder="Email"
               />
-              <textarea name="message" cols="30" rows="10">Message</textarea>
+              <textarea
+                name="message"
+                class="message"
+                cols="0"
+                rows="4"
+                placeholder="Message"
+              ></textarea>
             </form>
-            <button type="submit" id="form">Send Message</button>
+            <div class="btn">
+              <button type="submit" id="form">Send Message</button>
+            </div>
           </div>
         </div>
       </section>
@@ -134,6 +151,15 @@
         </div>
       </footer>
     </div>
+    <script>
+      const progressBar = document.getElementsByClassName("progress-bar")[0];
+      setInterval(() => {
+        const computedStyle = getComputedStyle(progressBar);
+        const width =
+          parseFloat(computedStyle.getPropertyValue("--width")) || 0;
+        progressBar.style.setProperty("--width", width + 0.1);
+      }, 5);
+    </script>
     <script
       src="https://kit.fontawesome.com/deb7a1878b.js"
       crossorigin="anonymous"
