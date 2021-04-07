@@ -1,0 +1,59 @@
+.about {
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  display: table;
+  .leftSection {
+    display: table-cell;
+    text-align: left;
+  }
+  h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .span__red {
+    color: red;
+  }
+  .skills {
+    progress[value] {
+      width: 100%;
+      height: 20px;
+    }
+    progress[value]::-webkit-progress-value::before {
+      position: absolute;
+      right: 0;
+      top: -125%;
+    }
+
+    progress[value]::-webkit-progress-value::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      border-radius: 100%;
+      right: 7px;
+      top: 7px;
+      background-color: white;
+    }
+    .skills__progress1 {
+      width: 90%;
+      height: 20px;
+      background-color: blue;
+    }
+    .skills__progress2 {
+      width: 86%;
+      height: 20px;
+      background-color: blue;
+    }
+    .skills__progress3 {
+      width: 78%;
+      height: 20px;
+      background-color: blue;
+    }
+  }
+}
