@@ -137,46 +137,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .header .form {
-  text-align: center;
   clear: both;
-  width: 70%;
-  margin: 6px auto 30px;
-}
-
-.wrapper .header .form input {
-  display: inline-block;
-  float: left;
-  border: none;
-  font-size: 15px;
+  text-align: center;
 }
 
 .wrapper .header .form input[type="email"] {
-  height: 54px;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 30px;
-  padding: 12px 15px 12px 20px;
-  border-radius: 3px 0 0 3px;
-  background: rgba(255, 255, 255, 0.25);
-  width: 20%;
+  background-color: transparent;
+  width: 30vw;
+  height: 4vh;
+  color: white;
+  font-size: 1.5vmin;
+  border-bottom: 2px solid white;
 }
 
-.wrapper .header .form input[type="submit"] {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 30px;
-  height: 54px;
-  padding: 12px 25px 12px 25px;
-  border-radius: 0 3px 3px 0;
-  background: white;
-  width: 30%;
-  text-align: center;
-  color: black;
-  transition: all 0.3s ease-in-out;
+.wrapper .header .form input[type="email"]::-webkit-input-placeholder {
+  color: white;
+  font-size: 1.5vmin;
 }
 
-.wrapper .header .form input[type="submit"]:hover {
-  background: #fbca08;
+.wrapper .header .form input[type="email"]:focus {
+  color: white;
+  font-size: 1.5vmin;
+}
+
+.wrapper .header .form button {
+  padding-top: 10px;
+  cursor: pointer;
+  font-size: 1.5vmin;
+  padding: 1.7vmin 5vmin;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px black;
+  background-color: #d11eb3;
+  color: #000;
+}
+
+.wrapper .header .form button:hover {
+  background-color: #3999a9;
 }
 
 .wrapper .header .mouse {
@@ -279,46 +275,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .header .form {
-  text-align: center;
   clear: both;
-  width: 70%;
-  margin: 6px auto 30px;
-}
-
-.wrapper .header .form input {
-  display: inline-block;
-  float: left;
-  border: none;
-  font-size: 15px;
+  text-align: center;
 }
 
 .wrapper .header .form input[type="email"] {
-  height: 54px;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 30px;
-  padding: 12px 15px 12px 20px;
-  border-radius: 3px 0 0 3px;
-  background: rgba(255, 255, 255, 0.25);
-  width: 20%;
+  background-color: transparent;
+  width: 30vw;
+  height: 4vh;
+  color: white;
+  font-size: 1.5vmin;
+  border-bottom: 2px solid white;
 }
 
-.wrapper .header .form input[type="submit"] {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 30px;
-  height: 54px;
-  padding: 12px 25px 12px 25px;
-  border-radius: 0 3px 3px 0;
-  background: white;
-  width: 30%;
-  text-align: center;
-  color: black;
-  transition: all 0.3s ease-in-out;
+.wrapper .header .form input[type="email"]::-webkit-input-placeholder {
+  color: white;
+  font-size: 1.5vmin;
 }
 
-.wrapper .header .form input[type="submit"]:hover {
-  background: #fbca08;
+.wrapper .header .form input[type="email"]:focus {
+  color: white;
+  font-size: 1.5vmin;
+}
+
+.wrapper .header .form button {
+  padding-top: 10px;
+  cursor: pointer;
+  font-size: 1.5vmin;
+  padding: 1.7vmin 5vmin;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px black;
+  background-color: #d11eb3;
+  color: #000;
+}
+
+.wrapper .header .form button:hover {
+  background-color: #3999a9;
 }
 
 .wrapper .header .mouse {
@@ -351,6 +343,97 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     cy: 231;
   }
+}
+
+.about {
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  display: table;
+}
+
+.about .leftSection {
+  display: table-cell;
+  text-align: left;
+}
+
+.about h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.about .span__red {
+  color: red;
+}
+
+.about .skills progress[value] {
+  width: 100%;
+  height: 20px;
+}
+
+.about .skills progress[value]::-webkit-progress-value::before {
+  position: absolute;
+  right: 0;
+  top: -125%;
+}
+
+.about .skills progress[value]::-webkit-progress-value::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 100%;
+  right: 7px;
+  top: 7px;
+  background-color: white;
+}
+
+.about .skills .skills__progress1 {
+  width: 90%;
+  height: 20px;
+  background-color: blue;
+}
+
+.about .skills .skills__progress2 {
+  width: 86%;
+  height: 20px;
+  background-color: blue;
+}
+
+.about .skills .skills__progress3 {
+  width: 78%;
+  height: 20px;
+  background-color: blue;
+}
+
+.footer {
+  height: 50vh;
+  background-color: blue;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.7vmin;
+  padding: 3vmin 0;
+}
+
+.footer .social a {
+  margin: 0 5vmin;
+  color: #fff;
+}
+
+.footer .social hr {
+  color: #fff;
+  width: 100%;
+  height: 3px;
 }
 
 @media only screen and (max-width: 900px) {
