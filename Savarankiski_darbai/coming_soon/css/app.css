@@ -160,8 +160,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5vmin;
 }
 
-.wrapper .header .form button {
-  padding-top: 10px;
+.wrapper .header .form .btn {
+  padding-top: 5%;
+}
+
+.wrapper .header .form .btn button {
   cursor: pointer;
   font-size: 1.5vmin;
   padding: 1.7vmin 5vmin;
@@ -171,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
-.wrapper .header .form button:hover {
+.wrapper .header .form .btn button:hover {
   background-color: #3999a9;
 }
 
@@ -298,8 +301,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5vmin;
 }
 
-.wrapper .header .form button {
-  padding-top: 10px;
+.wrapper .header .form .btn {
+  padding-top: 5%;
+}
+
+.wrapper .header .form .btn button {
   cursor: pointer;
   font-size: 1.5vmin;
   padding: 1.7vmin 5vmin;
@@ -309,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
-.wrapper .header .form button:hover {
+.wrapper .header .form .btn button:hover {
   background-color: #3999a9;
 }
 
@@ -421,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 7vh 7vw;
 }
 
-.about .rightSection .fName,
+.about .rightSection .name,
 .about .rightSection .email,
 .about .rightSection .message {
   background-color: transparent;
@@ -430,21 +436,21 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #888888;
 }
 
-.about .rightSection .fName::-webkit-input-placeholder,
+.about .rightSection .name::-webkit-input-placeholder,
 .about .rightSection .email::-webkit-input-placeholder,
 .about .rightSection .message::-webkit-input-placeholder {
   color: #888888;
   font-size: 1.5vmin;
 }
 
-.about .rightSection .fName:focus,
+.about .rightSection .name:focus,
 .about .rightSection .email:focus,
 .about .rightSection .message:focus {
   color: #888888;
   font-size: 1.5vmin;
 }
 
-.about .rightSection .fName {
+.about .rightSection .name {
   width: 48%;
   margin-right: 4%;
   float: left;
@@ -462,10 +468,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .about .rightSection .btn {
   text-align: right;
+  padding-top: 20px;
 }
 
 .about .rightSection .btn button {
-  padding-top: 10px;
   cursor: pointer;
   font-size: 1.5vmin;
   padding: 1.7vmin 5vmin;

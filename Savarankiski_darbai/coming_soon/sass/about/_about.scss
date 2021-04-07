@@ -64,7 +64,7 @@
     width: 40%;
     float: left;
     padding: 7vh 7vw;
-    .fName,
+    .name,
     .email,
     .message {
       background-color: transparent;
@@ -80,7 +80,7 @@
         font-size: 1.5vmin;
       }
     }
-    .fName {
+    .name {
       width: 48%;
       margin-right: 4%;
       float: left;
@@ -95,8 +95,8 @@
     }
     .btn {
       text-align: right;
+      padding-top: 20px;
       button {
-        padding-top: 10px;
         cursor: pointer;
         font-size: 1.5vmin;
         padding: 1.7vmin 5vmin;
