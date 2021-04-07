@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   width: 100%;
-  height: 50vh;
+  height: auto;
   background-color: #3999a9;
   color: #fff;
   text-align: center;
@@ -557,80 +557,104 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 900px) {
-  .logo-row {
+  .header .logo-row {
     width: 100%;
     padding-top: 0;
   }
-  .counter span {
+  .header .counter span {
     width: 100%;
     font-size: 20px;
   }
-  .form {
+  .header .form {
     padding: 0 0 0 30vh;
     width: 70%;
   }
-  .form input[type="email"] {
+  .header .form input[type="email"] {
     width: 60%;
   }
-  .form input[type="submit"] {
+  .header .form input[type="submit"] {
     width: 40%;
   }
-  .mouse {
+  .header .mouse {
     padding-top: 35px;
+  }
+  .about .leftSection {
+    width: 100%;
+  }
+  .about .rightSection {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .counter span {
+  .header .counter span {
     width: 100%;
     font-size: 20px;
   }
-  .form {
+  .header .form {
     padding: 0 0 0 20vh;
     width: 80%;
     margin-bottom: 30px;
   }
-  .form input[type="email"] {
+  .header .form input[type="email"] {
     width: 55%;
   }
-  .form input[type="submit"] {
+  .header .form input[type="submit"] {
     width: 45%;
+  }
+  .about .leftSection {
+    width: 100%;
+  }
+  .about .rightSection {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .counter span {
+  .header .counter span {
     width: 100%;
     font-size: 20px;
   }
-  .form {
+  .header .form {
     width: 100%;
     margin-bottom: 24px;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .form input[type="email"] {
+  .header .form input[type="email"] {
     width: 100%;
     float: none;
     margin-bottom: 0;
     border-radius: 3px 3px 0 0;
     text-align: center;
   }
-  .form input[type="email"] input[type="submit"] {
+  .header .form input[type="email"] input[type="submit"] {
     width: 100%;
     float: none;
     border-radius: 0 0 3px 3px;
   }
+  .about .leftSection {
+    width: 100%;
+  }
+  .about .rightSection {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .counter span {
+  .header .counter span {
     width: 100%;
     font-size: 20px;
   }
-  .counter span em {
+  .header .counter span em {
     font: 9px/18px "montserrat-regular", sans-serif;
     letter-spacing: 1.5px;
+  }
+  .about .leftSection {
+    width: 100%;
+  }
+  .about .rightSection {
+    width: 100%;
   }
 }
 
@@ -646,21 +670,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-@media only screen and (max-width: 320px) {
-  .header h1 {
-    font-size: 30px;
-  }
-  .header .counter span {
+  .about .leftSection {
     width: 100%;
-    font-size: 15px;
   }
-  .header .counter span em {
-    letter-spacing: 1px;
-  }
-  .header .form {
-    padding-left: 0;
-    padding-right: 0;
+  .about .rightSection {
+    width: 100%;
   }
 }
