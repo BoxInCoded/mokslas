@@ -8,7 +8,7 @@
     <title>Coming Soon</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="top">
       <header class="header">
         <div class="logo-row">
           <img class="logo" src="./img/logo.png" alt="LOGO" />
@@ -27,10 +27,15 @@
           <span>39 <em>seconds</em></span>
         </div>
         <div class="form">
-          <form action="#" class="subscribe">
-            <input type="email" class="email" placeholder="Type your email" />
-            <input type="submit" class="button" value="Subscribe Now" />
+          <form action="" class="subscribe" method="GET" id="form">
+            <input
+              type="email"
+              class="email"
+              name="email"
+              placeholder="Type your email"
+            />
           </form>
+          <button type="submit" class="btn" form="form">Subscribe Now</button>
         </div>
         <span class="mouse">
           <svg
@@ -50,8 +55,88 @@
           </svg>
         </span>
       </header>
-      <section class="about"></section>
-      <footer class="footer"></footer>
+      <section class="about">
+        <div class="leftSection">
+          <h2>about startup</h2>
+          <div class="description">
+            <p>
+              Matrox material design multi-purpose html template. It comes with
+              huge content and background variants.
+              <span class="span__red">Matrox</span> is coming very soon. We are
+              nearly there.
+            </p>
+          </div>
+          <div class="skills">
+            <span class="progress__name">ui design</span>
+            <div class="progressColumn">
+              <div class="skills__progress_text">90%</div>
+              <progress max="100" value="90"></progress>
+            </div>
+            <span class="progress__name">web design</span>
+            <div class="progressColumn">
+              <div class="skills__progress_text">86%</div>
+              <progress max="100" value="86"></progress>
+            </div>
+            <span class="progress__name">web development</span>
+            <div class="progressColumn">
+              <div class="skills__progress_text">78%</div>
+              <progress max="100" value="78"></progress>
+            </div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <h2>have any question?</h2>
+          <p>
+            You can use contact form below or contact us via e-mail at:
+            <span class="span__red">trendytheme.net@gmail.com</span> Contact
+            form is fully worcing and very easy to customize.
+          </p>
+          <div class="contactForm">
+            <form action="" id="form" class="contact" method="GET">
+              <input type="text" class="name" name="fName" placeholder="Name" />
+              <input
+                type="email"
+                class="email"
+                name="email"
+                placeholder="Email"
+              />
+              <textarea name="message" cols="30" rows="10">Message</textarea>
+            </form>
+            <button type="submit" id="form">Send Message</button>
+          </div>
+        </div>
+      </section>
+      <div class="bacToTop" id="top">Top</div>
+      <footer class="footer">
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tumblr"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-rss"></i></a>
+        </div>
+        <hr />
+        <div class="footerLogo"></div>
+        <div class="copyright">
+          <span>copyright</span>
+        </div>
+        <div class="footerMenu">
+          <nav class="nav">
+            <ul>
+              <li>Navigation</li>
+              <li>Navigation</li>
+              <li>Navigation</li>
+              <li>Navigation</li>
+              <li>Navigation</li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/deb7a1878b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
