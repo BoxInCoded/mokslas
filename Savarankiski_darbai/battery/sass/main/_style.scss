@@ -20,7 +20,16 @@
       .block {
         width: 24%;
         height: 95%;
-        border-radius: 5.5vmin;
+        border-radius: 1.5vmin;
+        @media (max-width: $tablet ) {
+        border-radius: 3.5vmin;
+        }
+        @media (max-width: $mobileL, $mobileM) {
+        border-radius: 4.5vmin;
+        }
+        @media (max-width: $mobileS) {
+        border-radius: 10.5vmin;
+        }
       }
       .red {
         animation: charge25 8s steps(1) infinite;
