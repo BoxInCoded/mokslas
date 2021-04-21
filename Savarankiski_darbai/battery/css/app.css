@@ -159,7 +159,25 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .container .battery .block {
   width: 24%;
   height: 95%;
-  border-radius: 5.5vmin;
+  border-radius: 1.5vmin;
+}
+
+@media (max-width: 768px) {
+  .wrapper .container .battery .block {
+    border-radius: 3.5vmin;
+  }
+}
+
+@media (max-width: (425px, 375px)) {
+  .wrapper .container .battery .block {
+    border-radius: 4.5vmin;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper .container .battery .block {
+    border-radius: 10.5vmin;
+  }
 }
 
 .wrapper .container .battery .red {
