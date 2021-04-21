@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  .container {
+    display: flex;
+    width: 95vmin;
+    height: 45vmin;
+    align-items: center;
+  }
+  .battery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 40%;
+    border: 4px solid #000;
+    border-radius: 30px;
+  }
+  .block {
+    width: 24%;
+    height: 95%;
+  }
+  .red {
+    background-color: $red;
+  }
+  .orange {
+    background-color: $orange;
+  }
+  .yellow {
+    background-color: $yellow;
+  }
+  .green {
+    background-color: $green;
+  }
+}
