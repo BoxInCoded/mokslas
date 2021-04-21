@@ -69,49 +69,120 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+@keyframes charge25 {
+  0% {
+    background-color: #FF0000;
+  }
+  25% {
+    background-color: #FFA500;
+  }
+  50% {
+    background-color: #FFFF00;
+  }
+  75% {
+    background-color: #00FF00;
+  }
+  100% {
+  }
+}
+
+@keyframes charge50 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    background-color: #FFA500;
+  }
+  50% {
+    background-color: #FFFF00;
+  }
+  75% {
+    background-color: #00FF00;
+  }
+  100% {
+  }
+}
+
+@keyframes charge75 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    background-color: #FFFF00;
+  }
+  75% {
+    background-color: #00FF00;
+  }
+  100% {
+  }
+}
+
+@keyframes charge100 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    background-color: #00FF00;
+  }
+  100% {
+  }
+}
+
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper .container {
   display: flex;
-  width: 95vmin;
+  width: 90vmin;
   height: 45vmin;
   align-items: center;
 }
 
-.wrapper .battery {
+.wrapper .container .battery {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 45%;
-  height: 40%;
-  border: 4px solid #000;
+  height: 100%;
+  width: 95%;
+  border: 10px solid #000000;
   border-radius: 30px;
 }
 
-.wrapper .block {
+.wrapper .container .battery .block {
   width: 24%;
   height: 95%;
+  border-radius: 5.5vmin;
 }
 
-.wrapper .red {
-  background-color: #FF0000;
+.wrapper .container .battery .red {
+  animation: charge25 8s steps(1) infinite;
 }
 
-.wrapper .orange {
-  background-color: #FFA500;
+.wrapper .container .battery .orange {
+  animation: charge50 8s steps(1) infinite;
 }
 
-.wrapper .yellow {
-  background-color: #FFFF00;
+.wrapper .container .battery .yellow {
+  animation: charge75 8s steps(1) infinite;
 }
 
-.wrapper .green {
-  background-color: #00FF00;
+.wrapper .container .battery .green {
+  animation: charge100 8s steps(1) infinite;
+}
+
+.wrapper .container .battery_front_nose {
+  display: inline-block;
+  height: 20%;
+  width: 5%;
+  background-color: #000000;
+  border-radius: 0 2vmin 2vmin 0;
 }
 /*# sourceMappingURL=app.css.map */

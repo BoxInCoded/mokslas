@@ -1,0 +1,25 @@
+@keyframes charge25 {
+    0%{background-color: $red;}
+    25%{background-color: $orange;}
+    50%{background-color: $yellow;}
+    75%{background-color: $green;}
+    100%{}
+}
+@keyframes charge50 {
+    0%{opacity: 0;}
+    25%{opacity: 1; background-color: $orange;}
+    50%{background-color: $yellow;}
+    75%{background-color: $green;}
+    100%{}
+}
+@keyframes charge75 {
+    0%{opacity: 0;}
+    50%{opacity: 1; background-color: $yellow;}
+    75%{background-color: $green;}
+    100%{}
+}
+@keyframes charge100 {
+    0%{opacity: 0;}
+    75%{opacity: 1; background-color: $green;}
+    100%{}
+}
