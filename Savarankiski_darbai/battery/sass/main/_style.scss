@@ -30,6 +30,15 @@
         @media (max-width: $mobileS) {
           border-radius: 6.5vmin;
         }
+        @media (max-width: $tablet) {
+          border-radius: 3.5vmin;
+        }
+        @media (max-width: $motoG4) {
+          border-radius: 5.5vmin;
+        }
+        @media (max-width: $pixel2) {
+          border-radius: 6.5vmin;
+        }
       }
       .red {
         animation: charge25 9s steps(1) infinite;
@@ -45,11 +54,32 @@
       }
     }
     .battery_front_nose {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 20%;
-      width: 9%;
+      width: 10%;
       background-color: $black;
       border-radius: 0 2vmin 2vmin 0;
+      div.counter {
+        animation: counter 9s infinite;
+        counter-reset: num var(--num);
+        font: 800 40px system-ui;
+        color: $white;
+        margin-right: 1vmin;
+        @media (max-width: $mobileS) {
+          font: 800 20px system-ui;
+        }
+        @media (max-width: $mobileL) {
+          font: 800 20px system-ui;
+        }
+        @media (max-width: $mobileM) {
+          font: 800 20px system-ui;
+        }
+      }
+      div.counter::after {
+        content: counter(num);
+      }
     }
   }
 }

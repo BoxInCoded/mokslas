@@ -1,9 +1,17 @@
+// Counter property's
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
 // Color
-$red: #FF0000;
-$orange: #FFA500;
-$yellow: #FFFF00;
-$green: #00FF00;
+$red: #ff0000;
+$orange: #ffa500;
+$yellow: #ffff00;
+$green: #00ff00;
 $black: #000000;
+$white: #ffffff;
 
 // Media
 $mobileS: 320px;
@@ -32,7 +40,3 @@ $ipad: 768px;
 $ipadPro: 1024px;
 $surfaceDuo: 540px;
 $galaxyFold: 280px;
-
-
-
-
